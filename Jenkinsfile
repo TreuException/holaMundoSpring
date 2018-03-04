@@ -4,7 +4,13 @@ node {
     }
 	
 	 stage('Construir') {
-		bat 'gradle build'
+		if(isUnix()){
+		  sh 'gradle build --info'
+
+		  }
+		  else{
+			bat 'gradle build --info'
+		  }
     }
 }
 	
