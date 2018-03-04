@@ -1,9 +1,9 @@
 node {
-    stage('compile') {
+    stage('Compilar') {
       echo "Hola mundo"
     }
 	
-	 stage('compile2') {
+	 stage('Compilar 2') {
       echo "Hola mundo222"
     }
 }
