@@ -4,12 +4,8 @@ node {
     }
 	
 	 stage('Construir') {
-		if(isUnix()){
-		sh 'gradle build --info'	
-		}
 		else{
-		bat 'gradle build --info'
-	  }
+		bat 'gradle build'
     }
 }
 	
