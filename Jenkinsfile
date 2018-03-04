@@ -1,9 +1,10 @@
 node {
     stage('actualizar codigo') {
-      checkout 'https://github.com/TreuException/holaMundoSpring'
+      checkout scm
     }
 	
 	 stage('Compilar 2') {
       echo "Hola mundo222"
     }
 }
+	
