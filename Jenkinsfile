@@ -11,7 +11,7 @@ node {
 		  else{
 		  
 		  
-			bat 'gradle build --info'
+			bat 'gradle build'
 		  }
     }
 }
