@@ -3,8 +3,13 @@ node {
       checkout scm
     }
 	
-	 stage('Compilar 2') {
-      echo "Hola mundo222"
+	 stage('Construir') {
+		if(isUnix()){
+		sh 'gradle build --info'	
+		}
+		else{
+		bat 'gradle build --info'
+	  }
     }
 }
 	
