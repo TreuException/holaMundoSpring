@@ -9,6 +9,8 @@ node {
 
 		  }
 		  else{
+		  
+		  
 			bat 'gradle build --info'
 		  }
     }
