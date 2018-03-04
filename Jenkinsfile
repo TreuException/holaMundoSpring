@@ -4,7 +4,6 @@ node {
     }
 	
 	 stage('Construir') {
-		else{
 		bat 'gradle build'
     }
 }
